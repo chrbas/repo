@@ -1,0 +1,14 @@
+Package: com.cefix.theme.cfx-blured-v2
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: CeFix
+Filename: ./Themes/SBHTML/cfx_blured_v2.deb
+Size: 28824
+MD5sum: 14aedf91f091b1ee41390723fd9cf52e
+SHA1: 07316534f5b3dd611aa3544cbe1b000d4d025d7d
+SHA256: 40d9b3c6958a69d5b918b2e5dfa43d7d2a9aa4c6a9b81714f1ba613e3f6eb737
+Homepage: https://chrbas.github.io/repo/index.html
+Description: a Theme created by using LPP from JunesIphone. Apply with SBHTML
+Author: CeFix (ion use of LPP)
+Name: cfx_blured_v2 (for SBHTML)
+
