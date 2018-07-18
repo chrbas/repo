@@ -1,13 +1,27 @@
 <div id="title">Cefix's Cydia repo</div> <!-- V2 -->
+
+<script type="text/javascript" src="js/qr-generator/qrcode.js"></script>
+
 <div id="content">
+    <div id="qrcode" style="float: left; width:100px; height:100px; margin-top:15px;"></div>
+    <div style="float: left; margin-left:15px; margin-top:15px;">
     This is my Cydia repo.<br>
     Feel free to add it to your list! Maybe some awesome stuff waits for you here ;)<br>
     thanks to h6nry <a href="http://h6nry.github.io/tutorial-cydia-repo.html">(http://h6nry.github.io/tutorial-cydia-repo.html</a> for the tutorial<br><br>
     <a href="cydia://url/https://cydia.saurik.com/api/share#?source=http://cefix.github.io/repo/"><b>Open Cydia for me!</b></a><span id="ocy"></span><br><br>
     <hr>
+    
     <h4>These are the packages on this repo</h4>
+
     <div id="samples" style="width:100%"></div>
+    </div>
     <script type="text/javascript">
+        // QR-Code for Cydia
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+                                width : 100,
+                                height : 100
+                                });
+    qrcode.makeCode("cydia://url/https://cydia.saurik.com/api/share#?source=http://cefix.github.io/repo/");
         //Some fast iOS check.
         is_ios = (navigator.userAgent.match(/iPad/i) != null) || (navigator.userAgent.match(/iPhone/i) != null) || (navigator.userAgent.match(/iPod/i) != null);
         if (!is_ios) document.getElementById('ocy').innerHTML = ' Most probably, you will not be able to open Cydia.';
