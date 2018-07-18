@@ -24,9 +24,9 @@ var template = ' \
 ' + content + '\
 </div> \
 <hr> \
-<h1><a href="https://twitter.com/chrbas/" target="_blank">Me on Twitter: CeFix (chrbas)</a><br> \
+<h6><a href="https://twitter.com/chrbas/" target="_blank">Me on Twitter: CeFix (chrbas)</a><br> \
 <a href="https://github.com/chrbas/" target="_blank">Me on Github: CeFix (chrbas)</a><br> \
-<a href="http://chrbas.github.io/" target="_blank">My Website</a></h1> \
+<a href="http://chrbas.github.io/" target="_blank">My Website</a></h6> \
 </td> \
 \
 </tr> \
