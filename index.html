@@ -24,12 +24,12 @@
     qrcode.makeCode("cydia://url/https://cydia.saurik.com/api/share#?source=https://chrbas.github.io/repo/");
         //Some fast iOS check.
         is_ios = (navigator.userAgent.match(/iPad/i) != null) || (navigator.userAgent.match(/iPhone/i) != null) || (navigator.userAgent.match(/iPod/i) != null);
-        if (!is_ios)
+        if (!is_ios) {
             document.getElementById('ocy').innerHTML = 'to add my Repo, Scan the QR code on the left with your iDevice';
-        else {
-            document.getElementById('ocy').innerHTML = '<a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://chrbas.github.io/repo/"><b>Open in Cydia</b></a> ';
             document.getElementById('qrcode').style.display = "none";
         }
+        else document.getElementById('ocy').innerHTML = '<a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://chrbas.github.io/repo/"><b>Open in Cydia</b></a> ';
+         
         //The functionality for the package list.
         function Apt_package() {
             this.Package;
