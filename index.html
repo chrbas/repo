@@ -26,7 +26,7 @@
         is_ios = (navigator.userAgent.match(/iPad/i) != null) || (navigator.userAgent.match(/iPhone/i) != null) || (navigator.userAgent.match(/iPod/i) != null);
         if (!is_ios) {
             document.getElementById('ocy').innerHTML = 'to add my Repo, Scan the QR code on the left with your iDevice';
-            document.getElementById('qrcode').style.display = "visible";
+            document.getElementById('qrcode').style.display.Show /* = "visible"; */
         }
     else {
         document.getElementById('ocy').innerHTML = '<a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://chrbas.github.io/repo/"><b>Open in Cydia</b></a> ';
