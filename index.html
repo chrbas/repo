@@ -1,9 +1,9 @@
-<div id="title">Cefix's Cydia repo</div> <!-- V2 -->
+<div id="title"><h2>Cefix's Cydia repo</h2></div> <!-- V2 -->
 
 <script type="text/javascript" src="js/qr-generator/qrcode.js"></script>
 
 <div id="content">
-    <div id="qrcode" style="float: left; width:100px; height:100px; margin-top:15px;"></div>
+    <!-- <div id="qrcode" style="float: left; width:100px; height:100px; margin-top:15px;"></div>
     <div style="float: left; margin-left:15px; margin-top:15px;">
     This is my Cydia repo.<br>
     Feel free to add it to your list! Maybe some awesome stuff waits for you here ;)<br>
@@ -14,7 +14,46 @@
     <h4>These are the packages on this repo</h4>
 
     <div id="samples" style="width:100%"></div>
-    </div>
+    </div> -->
+    
+    <table>
+        <TR>
+            <TH COLSPAN="2" ALING="LEFT">
+                <hr>
+            </TH>
+        </TR>
+        <TR>
+            <TD>
+                <div id="qrcode" style="width:120px; height:100px;"></div>
+            </TD>
+            <TD>
+                This is my Cydia repo.<br /> <br />
+                Feel free to add it to your list! Maybe some awesome stuff waits for you here ;)<br>
+                thanks to h6nry <a href="http://h6nry.github.io/tutorial-cydia-repo.html">(http://h6nry.github.io/tutorial-cydia-repo.html</a> for the tutorial<br> <br>
+                <span id="ocy"></span><br>
+            </TD>
+        <TR>
+            <TD>
+            </TD>
+            <TD>
+                
+            </TD>
+        </TR>
+        <TR>
+            <TH COLSPAN="2" ALIGN="LEFT">
+                <hr>
+                <h4>These are the packages on this repo</h4>
+                <div id="samples" style="width:100%"></div>
+            </TH>
+        </TR>
+        <TR>
+            <TH COLSPAN="2" ALING="LEFT">
+                <hr>
+            </TH>
+        </TR>
+    </table>
+        
+
     <script type="text/javascript">
         // QR-Code for Cydia
         var qrcode = new QRCode(document.getElementById('qrcode'), {
@@ -135,7 +174,7 @@
 </div>
 
 <!-- include this where you want the standard design template from here... -->
-<script type="text/javascript" src="template.js"></script>
+<script type="text/javascript" src="/js/template.js"></script>
 <noscript>
     As this website uses JavaScript to generate a semi-dynamically created page, you need to activate JavaScript!
 </noscript>
